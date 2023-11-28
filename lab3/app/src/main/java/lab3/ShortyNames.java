@@ -1,1 +1,0 @@
-public enum ShortyNames {Krabs, Miga, Julio}
