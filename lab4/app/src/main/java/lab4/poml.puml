@@ -1,0 +1,98 @@
+@startuml
+scale max 4000 width
+interface lab4.Alive {
+void move()
+}
+
+
+class lab4.App {
++static void main(String[] args)
+}
+lab4.App --down[#AAA]-o lab4.Scooperfield
+lab4.App -down[#AAA]--o lab4.Chinch
+lab4.App -down[#AAA]-o lab4.Shorty
+lab4.App -down[#AAA]--o lab4.Shorty
+lab4.App -down[#AAA]-o lab4.Shorty
+
+interface lab4.Attack {
+void confrontation(String victim)
+}
+
+
+class lab4.Chinch extends lab4.Creature  implements lab4.Alive, lab4.Attack {
++Chinch(String name)
++Chinch(String name, boolean isThirsty, boolean isHungry)
++void move()
++void confrontation(String victim)
++boolean equals(Object obj)
++String toString()
++int hashCode()
+}
+
+
+abstract class lab4.Creature {
+-final String name
+-final String type
+-boolean isThirsty
+-boolean isHungry
++Creature(String name, String type)
++Creature(String name, String type, boolean isThirsty, boolean isHungry)
++String getName()
++String getType()
++boolean getThirsty()
++boolean getHungry()
++void setThirsty(boolean isThirsty)
++void setHungry(boolean isHungry)
++String toString()
++boolean equals(Object obj)
++int hashCode()
+}
+
+
+class lab4.IllegalAwardDeny extends Exception {
++IllegalAwardDeny(String message)
+}
+
+
+class lab4.MuteException extends RuntimeException {
++MuteException(String message)
+}
+
+
+class lab4.Scooperfield extends lab4.Creature implements lab4.Alive, lab4.Attack {
+-boolean muted
+-long award
+EmotionalState emotionalState
++Scooperfield(boolean muted, boolean isThirsty, boolean isHungry, long award)
+-class EmotionalState
++static class Imagination
++void setMuted(boolean muted)
++void setAward(long award) throws IllegalAwardDeny
++void move()
++void confrontation(String victim)
++void speak(String speech) throws MuteException
++boolean equals(Object obj)
++String toString()
++int hashCode()
+}
+lab4.Scooperfield --down[#AAA]-o lab4.IllegalAwardDeny
+lab4.Scooperfield -down[#AAA]--o lab4.MuteException
+
+class lab4.Shorty extends lab4.Creature implements lab4.Alive, lab4.Attack {
++Shorty(ShortyNames Name)
++void move()
++void confrontation(String victim)
++void help(Creature creature)
++boolean equals(Object obj)
++String toString()
++int hashCode()
+}
+
+
+enum lab4.ShortyNames {
+KRABS("Крабс"),MIGA("Мига"),JULIO("Жулио")
+-String name
+ShortyNames(String name)
++String toString()
+}
+@enduml
