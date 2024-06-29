@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.AddController">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="-2.0" prefHeight="490.0" prefWidth="343.0">
+         <center>
+            <GridPane alignment="CENTER" prefHeight="353.0" prefWidth="343.0" style="-fx-vgap: 10px;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="addName" prefHeight="18.0" prefWidth="51.0" text="Name">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addCoordX" text="Coordinate X" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addCoordY" text="Coordinate Y" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addOscars" text="Oscars count" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addGenre" text="Genre" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addMpaa" text="MPAA Rating" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addScrName" lineSpacing="5.0" text="Screenwriter's name" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addScrBirthday" text="Screenwriter's birthday" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addScrWeight" text="Screenwriter's weight" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addScrCoordX" text="Screenwriter's coordinate X" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addScrCoordY" text="Screenwriter's coordinate Y" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addScrCountry" text="Screenwriter's country" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" promptText="Kill Bill" text="Kill Bill" GridPane.columnIndex="1" />
+                  <TextField fx:id="coordXField" promptText="459" text="238" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="coordYField" promptText="794" text="294" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="oscarsCountField" promptText="4" text="4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="genreField" promptText="DRAMA" text="DRAMA" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="mpaaRatingField" promptText="R" text="R" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="screenwriterNameField" promptText="Quentin Jerome Tarantino" text="Quentin Jerome Tarantino" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="screenwriterBirthdayField" promptText="1963-03-27" text="1963-03-27" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="screenwriterWeightField" promptText="88.2" text="88.2" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="screenwriterCoordXField" promptText="998" text="998" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="screenwriterCoordYField" promptText="381" text="381" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="screenwriterCountryField" promptText="USA" text="USA" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </GridPane>
+         </center>
+         <top>
+            <VBox alignment="CENTER" prefHeight="59.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="addTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill the gaps">
+                     <font>
+                        <Font name="Sitka Display" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="65.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="validatorLabel" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font name="Sitka Display" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sendBtn" alignment="CENTER" mnemonicParsing="false" onAction="#sendBtnOnAction" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #3b9e19;" text="Send" textFill="WHITE">
+                     <font>
+                        <Font name="Sitka Display" size="14.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

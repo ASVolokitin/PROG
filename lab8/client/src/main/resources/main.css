@@ -1,0 +1,16 @@
+.languageSelector >.list-cell {
+    -fx-text-fill: WHITE;
+}
+.textarea *.text {
+    -fx-text-alignment: center;
+}
+
+.maintable.column-header-cell {
+    -fx-font-family: "Sitka Display";
+    -fx-font-size: 12px;
+}
+
+.maintable.cell {
+    -fx-font-family: "Sitka Banner";
+    -fx-font-size: 14px;
+}
